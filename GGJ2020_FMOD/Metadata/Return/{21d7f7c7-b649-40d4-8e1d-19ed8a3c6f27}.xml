@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerReturn" id="{21d7f7c7-b649-40d4-8e1d-19ed8a3c6f27}">
+		<property name="name">
+			<value>FX</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{f3aec5f9-6c26-4cfb-a93c-1c0ea45453f2}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8e5c198f-96b4-45d5-b75b-9ff800611007}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{a2f79557-6ad6-43cc-a3ae-8e4dc2e35f68}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{f3aec5f9-6c26-4cfb-a93c-1c0ea45453f2}">
+		<relationship name="effects">
+			<destination>{737c3ab3-2ec0-422a-b3d6-a9f589fff487}</destination>
+			<destination>{6373d561-2525-47dd-91e8-14e32af504ba}</destination>
+			<destination>{700fcfad-9e87-473e-8bbd-ab64ab27e2e6}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8e5c198f-96b4-45d5-b75b-9ff800611007}" />
+	<object class="MixerBusFader" id="{737c3ab3-2ec0-422a-b3d6-a9f589fff487}" />
+	<object class="SFXReverbEffect" id="{6373d561-2525-47dd-91e8-14e32af504ba}">
+		<property name="decayTime">
+			<value>2700</value>
+		</property>
+		<property name="earlyDelay">
+			<value>52</value>
+		</property>
+		<property name="wetLevel">
+			<value>0</value>
+		</property>
+		<relationship name="automators">
+			<destination>{85267708-9635-4099-96f0-452e4d7b6a1a}</destination>
+		</relationship>
+	</object>
+	<object class="DistortionEffect" id="{700fcfad-9e87-473e-8bbd-ab64ab27e2e6}">
+		<property name="level">
+			<value>0.215000018</value>
+		</property>
+	</object>
+	<object class="Automator" id="{85267708-9635-4099-96f0-452e4d7b6a1a}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>wetLevel</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{a9e6b75f-24e6-4d94-bc95-d976522cf492}">
+		<property name="name">
+			<value>Effect Chain</value>
+		</property>
+		<relationship name="folder">
+			<destination>{bbd80069-7ed3-4157-a8a1-b4947ee37156}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{4dc68cd8-5c95-49b1-84cb-0a98d4da0455}</destination>
+		</relationship>
+	</object>
+	<object class="EffectChain" id="{4dc68cd8-5c95-49b1-84cb-0a98d4da0455}">
+		<relationship name="effects">
+			<destination>{e03074fa-b618-4897-81f2-e62cf8cdcf3a}</destination>
+			<destination>{9e45eeac-53e1-4759-b811-2eec8ef1fd16}</destination>
+		</relationship>
+	</object>
+	<object class="DistortionEffect" id="{e03074fa-b618-4897-81f2-e62cf8cdcf3a}">
+		<property name="level">
+			<value>0.460000038</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{9e45eeac-53e1-4759-b811-2eec8ef1fd16}" />
+</objects>

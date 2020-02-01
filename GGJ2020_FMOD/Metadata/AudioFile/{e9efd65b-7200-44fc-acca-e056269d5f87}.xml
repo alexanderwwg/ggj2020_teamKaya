@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e9efd65b-7200-44fc-acca-e056269d5f87}">
+		<property name="assetPath">
+			<value>Voices/dc_vo_char2_fast_04.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>4</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e75e5c5a-2311-4bb7-8854-5938085ee44a}</destination>
+		</relationship>
+	</object>
+</objects>
