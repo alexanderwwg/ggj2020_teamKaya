@@ -12,7 +12,6 @@ public class WaveControllerScript : MonoBehaviour
     private SineWaveScript listeningSine;
     private SquareWaveScript listeningSquare;
     private TriangleWaveScript listeningTriangle;
-    public float winMargin;
     public GameObject speaking;
     public GameObject listening;
     public float amplitudeDifference;
@@ -66,11 +65,14 @@ public class WaveControllerScript : MonoBehaviour
             frequencyDifference = Mathf.Clamp(Mathf.Abs(listeningSquare.frequency-speakingSquare.frequency), 0, 1);
         }
         closeness = 1-(amplitudeDifference + frequencyDifference)/2;
+<<<<<<< HEAD
         if (closeness > winMargin)
         {
             Debug.Log(closeness + " " + winMargin);
             GameStateScript.State = Game.matched;
             
         }
+=======
+>>>>>>> parent of 156bf4e... Initial GameLoop Controller commit
     }
 }
