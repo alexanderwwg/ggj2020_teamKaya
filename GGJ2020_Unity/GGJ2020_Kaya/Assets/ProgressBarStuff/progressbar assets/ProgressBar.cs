@@ -9,6 +9,10 @@ public class ProgressBar : MonoBehaviour
   [Range(0, 1)]
   public float progress = 0.5f;
 
+  private float hiddenProgress = 0;
+
+  public float progressLerpSpeed = 15;
+
   [Header("Milestones")]
   [Range(0, 1)]
   public float checkPoint1 = 0;
@@ -64,9 +68,16 @@ public class ProgressBar : MonoBehaviour
 
   private void Update()
   {
-    if(rend.material.GetFloat("_Progress") != progress)
+    if(hiddenProgress < progress)
     {
-      rend.material.SetFloat("_Progress", progress);
+      hiddenProgress += progressLerpSpeed * Time.deltaTime;
+
+      if (hiddenProgress > progress) hiddenProgress = progress;
+    }
+
+    if(rend.material.GetFloat("_Progress") != hiddenProgress)
+    {
+      rend.material.SetFloat("_Progress", hiddenProgress);
       CheckMilestone();
     }
   }
@@ -76,7 +87,7 @@ public class ProgressBar : MonoBehaviour
     switch(starAmt)
     {
       case 0:
-        if (progress >= checkPoint1)
+        if (hiddenProgress >= checkPoint1)
         {
           starAmt++;
           starSpriteRends[0].color = Color.white;
@@ -84,7 +95,7 @@ public class ProgressBar : MonoBehaviour
         }
         break;
       case 1:
-        if (progress >= checkPoint2)
+        if (hiddenProgress >= checkPoint2)
         {
           starAmt++;
           starSpriteRends[1].color = Color.white;
@@ -93,7 +104,7 @@ public class ProgressBar : MonoBehaviour
         }
         break;
       case 2:
-        if (progress >= checkPoint3)
+        if (hiddenProgress >= checkPoint3)
         {
           starAmt++;
           starSpriteRends[3].color = Color.white;
@@ -102,6 +113,17 @@ public class ProgressBar : MonoBehaviour
           particleSystems[2].Play();
         }
         break;
+    }
+  }
+
+  private void Reset()
+  {
+    foreach(SpriteRenderer rend in starSpriteRends)
+    {
+      progress = 0;
+      rend.color = Color.black;
+      starAmt = 0;
+      hiddenProgress = 0;
     }
   }
 

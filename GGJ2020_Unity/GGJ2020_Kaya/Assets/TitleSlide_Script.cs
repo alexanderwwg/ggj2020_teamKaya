@@ -6,14 +6,13 @@ public class TitleSlide_Script : MonoBehaviour
 {
     public Vector2 finalPos;
     public float moveSpeed;
+    public MenuButton_Script menuScript;
 
     private RectTransform rectransform;
-    private bool moving;
     // Start is called before the first frame update
     void Start()
     {
         rectransform = GetComponent<RectTransform>();
-        moving = true;
     }
 
     // Update is called once per frame
@@ -29,7 +28,7 @@ public class TitleSlide_Script : MonoBehaviour
         }
         else
         {
-            moving = false;
+            menuScript.ShowButtons();
         }
         
     }
