@@ -9,16 +9,22 @@ public class Head_AniScript : MonoBehaviour
     public bool isLeft;
     public float moveSpeed;
     public float endPos;
+    public float gamePos=5.35f;
 
-    enum headState {idle, kissMove, kissFinish };
-    private headState hS;
+    public enum headState {idle, kissMove, kissFinish, beginGame };
+    public headState hS;
     private Transform transform;
     // Start is called before the first frame update
     void Start()
     {
+        if (isLeft)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            gamePos *=-1;
+        }
         SetIsTalking(talking);
         transform = GetComponent<Transform>();
-        hS = headState.idle;
+        hS = headState.beginGame;
     }
 
     // Update is called once per frame
@@ -43,6 +49,19 @@ public class Head_AniScript : MonoBehaviour
                     }
                     break;
                 }
+            case headState.beginGame:
+            {
+                MoveHead(moveSpeed);
+                if(isLeft && gamePos < transform.position.x)
+                    {
+                        hS = headState.idle;
+                    }
+                    if(!isLeft && gamePos > transform.position.x)
+                    {
+                        hS = headState.idle;
+                    }
+                    break;
+            }
             default:
                 {
                     break;
