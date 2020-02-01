@@ -633,7 +633,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Head_AniScript.cs" />
     <Compile Include="Assets\Scripts\MenuButton_Script.cs" />
   </ItemGroup>
   <ItemGroup>

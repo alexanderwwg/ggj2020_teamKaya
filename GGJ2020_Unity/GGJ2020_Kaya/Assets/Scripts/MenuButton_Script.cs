@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
 
 public class MenuButton_Script : MonoBehaviour
 {
@@ -16,11 +14,6 @@ public class MenuButton_Script : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void LoadScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
     }
 
     public void QuitGame()
