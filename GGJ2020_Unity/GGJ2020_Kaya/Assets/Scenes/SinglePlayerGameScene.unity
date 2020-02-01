@@ -252,7 +252,7 @@ PrefabInstance:
     - target: {fileID: 3057591484804853607, guid: 57dc76bb6cb063645b2a92c66677bd15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.35
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3057591484804853607, guid: 57dc76bb6cb063645b2a92c66677bd15,
         type: 3}
@@ -508,15 +508,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1269406125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0a49c81bcf2fb4489649b16726803f, type: 3}
+  m_Script: {fileID: 11500000, guid: a21b2ec246c4eb34eabf665a3044b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 200
   length: 30
-  amplitude: 2
+  amplitude: 1
   frequency: 1
   offset: 0
-  direction: 1
+  direction: 0
 --- !u!120 &1269406128
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1269406125}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3557533153743c64b9cbc64ac1ab2a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: e55e82a4b63bce445a1427a773649147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
@@ -674,7 +674,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1276733679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0a49c81bcf2fb4489649b16726803f, type: 3}
+  m_Script: {fileID: 11500000, guid: a21b2ec246c4eb34eabf665a3044b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 200
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1276733679}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3557533153743c64b9cbc64ac1ab2a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: e55e82a4b63bce445a1427a773649147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
@@ -1038,7 +1038,7 @@ PrefabInstance:
     - target: {fileID: 9103185510656260687, guid: d6040eb22dbbeed49be27de622b9b473,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.35
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 9103185510656260687, guid: d6040eb22dbbeed49be27de622b9b473,
         type: 3}
