@@ -15179,6 +15179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
+  progressLerpSpeed: 0.7
   checkPoint1: 0.415
   checkPoint2: 0.69
   checkPoint3: 1
