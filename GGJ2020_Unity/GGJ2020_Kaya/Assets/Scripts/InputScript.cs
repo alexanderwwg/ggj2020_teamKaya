@@ -11,32 +11,47 @@ public class InputScript : MonoBehaviour
     public float offsetSpeed = 1f;
     public float frequencyFactor = 0.125f;
     public float amplitudeFactor = 3f;
+    public float startDelay = 5.0f;
+    private float startTime;
+
+    public bool isOn= false;
     // Start is called before the first frame update
     void Start()
     {
         sineScript = listenLine.GetComponent<SineWaveScript>();
+        startTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float finalX = WithinRange(Input.mousePosition.x, 0, Screen.width);
-        float finalY = WithinRange(Input.mousePosition.y, 0, Screen.height);
-        sineScript.frequency = 1/(finalX/(Screen.width/2) * frequencyFactor);
-        sineScript.amplitude = finalY/(Screen.height/2) * amplitudeFactor;
-        //InputSCript.mousePosition.y
-        //Debug.Log(sineScript.frequency);
-        //Debug.Log(sineScript.amplitude);
+        if(isOn)
+        {
+            float finalX = WithinRange(Input.mousePosition.x, 0, Screen.width);
+            float finalY = WithinRange(Input.mousePosition.y, 0, Screen.height);
+            sineScript.frequency = 1/(finalX/(Screen.width/2) * frequencyFactor);
+            sineScript.amplitude = finalY/(Screen.height/2) * amplitudeFactor;
+            //InputSCript.mousePosition.y
+            //Debug.Log(sineScript.frequency);
+            //Debug.Log(sineScript.amplitude);
 
-        sineScript.frequency +=Input.GetAxis("Horizontal") * Time.deltaTime * frequencySpeed;
-        sineScript.amplitude +=Input.GetAxis("Vertical") * Time.deltaTime * amplitudeSpeed;
-        if (Input.GetKey(KeyCode.A))
-        {
-            sineScript.offset +=1*Time.deltaTime * offsetSpeed;
+            sineScript.frequency +=Input.GetAxis("Horizontal") * Time.deltaTime * frequencySpeed;
+            sineScript.amplitude +=Input.GetAxis("Vertical") * Time.deltaTime * amplitudeSpeed;
+            if (Input.GetKey(KeyCode.A))
+            {
+                sineScript.offset +=1*Time.deltaTime * offsetSpeed;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                sineScript.offset -=1*Time.deltaTime *offsetSpeed;
+            }
         }
-        if (Input.GetKey(KeyCode.D))
+        else
         {
-            sineScript.offset -=1*Time.deltaTime *offsetSpeed;
+            if (Time.time - startTime > startDelay)
+            {
+                isOn = true;
+            }
         }
     }
 

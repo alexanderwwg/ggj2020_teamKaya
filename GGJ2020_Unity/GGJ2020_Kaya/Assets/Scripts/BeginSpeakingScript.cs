@@ -6,7 +6,8 @@ public class BeginSpeakingScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public float gamePos = -5.0f;
-    public float moveSpeed = 0.1f;    private Transform transform;
+    public float moveSpeed = 0.0f;
+    private Transform transform;
     void Start()
     {
         transform = GetComponent<Transform>();
