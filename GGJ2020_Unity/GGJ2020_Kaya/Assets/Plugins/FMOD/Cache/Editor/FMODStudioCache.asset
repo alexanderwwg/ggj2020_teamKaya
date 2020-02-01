@@ -15,12 +15,12 @@ MonoBehaviour:
   Path: event:/vo_char3_fast_loop
   guid: 4fa5ec0dfc1ac747b76635201b851eef
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6450791301303967573}
+  - {fileID: 7588309813497927409}
   MinDistance: 0
   MaxDistance: 0
   Length: 4166
@@ -41,6 +41,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8209061450459895326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char2_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &-8184990061214587499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +73,7 @@ MonoBehaviour:
   Path: event:/vo_char1_good
   guid: 41c08185b437c742b18492acd2fe551c
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -98,7 +115,7 @@ MonoBehaviour:
   guid: 79760192143df242bc4acb9610977ac0
   Banks:
   - {fileID: -4663933629352524532}
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -139,12 +156,12 @@ MonoBehaviour:
   Path: event:/vo_char4_fast_loop
   guid: 87ec00ef3b1bfc4f82d931051707a5a7
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3965442694893571175}
+  - {fileID: 3115198966499850990}
   MinDistance: 0
   MaxDistance: 0
   Length: 5142
@@ -164,7 +181,7 @@ MonoBehaviour:
   guid: 29e9f06d7e64f54cbee3a2534a9690c0
   Banks:
   - {fileID: -4663933629352524532}
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -205,7 +222,7 @@ MonoBehaviour:
   Path: event:/sfx_star
   guid: 4150c27beea1494ab57c97543573a3bf
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -230,7 +247,7 @@ MonoBehaviour:
   lastModified: 637162023342047238
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5635311517005335019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +281,7 @@ MonoBehaviour:
   Path: event:/bgm_mainmenu
   guid: a05be0df4d83f644b94edf205f96b10a
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -287,7 +304,7 @@ MonoBehaviour:
   Path: event:/vo_char2_good
   guid: ffd642d11736864b9ffb44ffd0ec2ebf
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -311,7 +328,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4663933629352524532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,6 +400,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-3683876833266657551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_sineWaveEmitter/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &-3449667488225456977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +433,7 @@ MonoBehaviour:
   guid: 5366f5453decac439df455b558a35b71
   Banks:
   - {fileID: -4663933629352524532}
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -423,12 +457,12 @@ MonoBehaviour:
   guid: b32801a9241d4745b0dee20e3b5736d6
   Banks:
   - {fileID: -4663933629352524532}
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2669557070960468460}
+  - {fileID: -3683876833266657551}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
@@ -464,7 +498,7 @@ MonoBehaviour:
   Path: event:/sfx_good
   guid: 4c81ca232ae6a04ba8a60b4ee62f3d1d
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -488,8 +522,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2584798026713346484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char1_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &-2524093709955309965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,12 +607,12 @@ MonoBehaviour:
   Path: event:/vo_char3_slow_loop
   guid: 628245ce2ee58d4a9a5ec799f107466a
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5006909223870388857}
+  - {fileID: 5802739835682052642}
   MinDistance: 0
   MaxDistance: 0
   Length: 4566
@@ -633,7 +684,7 @@ MonoBehaviour:
   Path: event:/sfx_kiss_fail
   guid: 856349bad278b94f95b578e8e3b0fc88
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -743,7 +794,7 @@ MonoBehaviour:
   Path: event:/vo_char3_good
   guid: d2b92809cf7dfc47bcab42ffbf1f7b82
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -765,8 +816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 4891070009150433797}
-  - {fileID: 1411777562210595792}
-  - {fileID: -5754854221908925350}
+  - {fileID: 5568348566578596320}
+  - {fileID: 8276657976241424148}
   EditorEvents:
   - {fileID: -3080745705179850613}
   - {fileID: -7319084169780493909}
@@ -793,10 +844,10 @@ MonoBehaviour:
   - {fileID: -5405948207761139860}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5754854221908925350}
+  - {fileID: 8276657976241424148}
   StringsBanks:
   - {fileID: 4891070009150433797}
-  stringsBankWriteTime: 637162023342234174
+  stringsBankWriteTime: 637162140359105694
   cacheVersion: 3
 --- !u!114 &185236977565508826
 MonoBehaviour:
@@ -867,6 +918,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+  Exists: 0
+--- !u!114 &864794290528856308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_ingame/stage
+  m_EditorClassIdentifier: 
+  Name: stage
+  Min: 0
+  Max: 6
+  Default: 0
   Exists: 1
 --- !u!114 &997326416076206770
 MonoBehaviour:
@@ -883,12 +951,12 @@ MonoBehaviour:
   Path: event:/vo_char2_slow_loop
   guid: 6366c64f7b621c4e8745f608ee11b01b
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 805707837629126874}
+  - {fileID: -8209061450459895326}
   MinDistance: 0
   MaxDistance: 0
   Length: 4000
@@ -907,12 +975,12 @@ MonoBehaviour:
   Path: event:/vo_char2_fast_loop
   guid: 2c5e12d60405134093695c232d89e180
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3848003623336595535}
+  - {fileID: 6913828638161874511}
   MinDistance: 0
   MaxDistance: 0
   Length: 4000
@@ -933,7 +1001,7 @@ MonoBehaviour:
   lastModified: 637162023341917605
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1418749888239695904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,12 +1017,12 @@ MonoBehaviour:
   Path: event:/vo_char1_fast_loop
   guid: 76777cce89b1d54fac8e0a7dab46f74b
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6428041967380282635}
+  - {fileID: 7911882642900595529}
   MinDistance: 0
   MaxDistance: 0
   Length: 4333
@@ -973,7 +1041,7 @@ MonoBehaviour:
   Path: event:/vo_char4_good
   guid: 023250a98fe6e74c977f1f31ace2d154
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1014,12 +1082,12 @@ MonoBehaviour:
   Path: event:/vo_char4_slow_loop
   guid: 110dde364a4c5947b6e3dc55de6012da
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6991392570837199671}
+  - {fileID: 4611048718584583516}
   MinDistance: 0
   MaxDistance: 0
   Length: 6226
@@ -1055,7 +1123,7 @@ MonoBehaviour:
   Path: event:/sfx_kiss_success
   guid: d82507cf53839148b5328e9c52f8585a
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1063,6 +1131,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
+--- !u!114 &3115198966499850990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char4_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &3290015754003042872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,7 +1182,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &3965442694893571175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,7 +1199,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &4211157030806783641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,6 +1235,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4611048718584583516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char4_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &4821035306664051402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,7 +1286,7 @@ MonoBehaviour:
   Min: 0
   Max: 6
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4891070009150433797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,7 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../../GGJ2020_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162023342234174
+  lastModified: 637162140359105694
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1237,12 +1339,12 @@ MonoBehaviour:
   Path: event:/vo_char1_slow_loop
   guid: 4c1f228f2b6cdc42801dd95d7f3f33a8
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2584798026713346484}
+  - {fileID: -2524093709955309965}
   MinDistance: 0
   MaxDistance: 0
   Length: 4266
@@ -1264,6 +1366,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5568348566578596320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Main.bank
+  SubDir: 
+  lastModified: 637162140358751557
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5625871856592802868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1282,6 +1402,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &5802739835682052642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char3_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &6428041967380282635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,7 +1435,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &6450791301303967573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1452,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &6463012942371790216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,6 +1471,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6913828638161874511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char2_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &6991392570837199671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,7 +1504,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &7095911673194149935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,7 +1556,7 @@ MonoBehaviour:
   guid: 4cd6c4d55b9350419233ad8b0ada9936
   Banks:
   - {fileID: -4663933629352524532}
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1410,6 +1564,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &7588309813497927409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char3_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &7888502920145826471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1428,6 +1599,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &7911882642900595529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char1_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &8131462993582498889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,15 +1631,33 @@ MonoBehaviour:
   Path: event:/bgm_ingame
   guid: 7ae24b78e141fd4a928ddcc470e3f178
   Banks:
-  - {fileID: 1411777562210595792}
+  - {fileID: 5568348566578596320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4864116177197766827}
+  - {fileID: 864794290528856308}
   MinDistance: 0
   MaxDistance: 0
   Length: 28394
+--- !u!114 &8276657976241424148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162140358941057
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8369043682642023138
 MonoBehaviour:
   m_ObjectHideFlags: 0

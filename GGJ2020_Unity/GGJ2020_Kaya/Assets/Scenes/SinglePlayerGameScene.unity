@@ -440,7 +440,7 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &977281946
@@ -1024,10 +1024,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 156bf4e... Initial GameLoop Controller commit
   m_GameObject: {fileID: 1471517383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1892356, y: -4.143381, z: -2.959762}
@@ -1036,7 +1032,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1637626649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1265286014135379952, guid: 9f0c30c89e6722040bcca2f474343d48,
@@ -1093,10 +1088,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
-=======
->>>>>>> parent of 7e00497... Conflict resolution
-=======
->>>>>>> parent of 156bf4e... Initial GameLoop Controller commit
 --- !u!1 &1645612611
 GameObject:
   m_ObjectHideFlags: 0
