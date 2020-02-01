@@ -105,4 +105,14 @@ public class ProgressBar : MonoBehaviour
     }
   }
 
+  private void Reset()
+  {
+    foreach(SpriteRenderer rend in starSpriteRends)
+    {
+      progress = 0;
+      rend.color = Color.black;
+      starAmt = 0;
+    }
+  }
+
 }
