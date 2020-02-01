@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{5ce3cc96-dd24-4dfe-aaec-77aa8d05fb78}">
+		<property name="name">
+			<value>Effect Chain 2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{bbd80069-7ed3-4157-a8a1-b4947ee37156}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{08cb4d87-cfd6-4654-afb1-53de17da2c59}</destination>
+		</relationship>
+	</object>
+	<object class="EffectChain" id="{08cb4d87-cfd6-4654-afb1-53de17da2c59}">
+		<relationship name="effects">
+			<destination>{49e0f58a-2f3f-44c1-bedf-df609d12de7c}</destination>
+			<destination>{80c72a23-82d2-4cf4-96a2-bb8df9a2def7}</destination>
+		</relationship>
+	</object>
+	<object class="SFXReverbEffect" id="{49e0f58a-2f3f-44c1-bedf-df609d12de7c}">
+		<property name="decayTime">
+			<value>12500</value>
+		</property>
+		<property name="wetLevel">
+			<value>-16.5</value>
+		</property>
+		<property name="dryLevel">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{80c72a23-82d2-4cf4-96a2-bb8df9a2def7}">
+		<property name="frequencyA">
+			<value>420</value>
+		</property>
+	</object>
+</objects>
