@@ -28,10 +28,10 @@ public class LineController : MonoBehaviour
     {
         
     }
-    public void switchWave(WaveType waveType, float switchAmplitude, float switchFrequency)
+    public void switchWave(WaveType _waveType, float switchAmplitude, float switchFrequency)
     {
 
-        switch(waveType)
+        switch(_waveType)
         {
             case WaveType.sine:
             {

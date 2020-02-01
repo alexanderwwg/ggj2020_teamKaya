@@ -117,8 +117,8 @@ MonoBehaviour:
   animator: {fileID: 8944979518537492152}
   talking: 0
   isLeft: 0
-  moveSpeed: 0
-  endPos: 0
+  moveSpeed: 2
+  endPos: 1.15
   gamePos: 5.35
   hS: 0
   badFx: {fileID: 4993318140112442563, guid: ce22aadbc87bf554d813b53e2c4156a6, type: 3}

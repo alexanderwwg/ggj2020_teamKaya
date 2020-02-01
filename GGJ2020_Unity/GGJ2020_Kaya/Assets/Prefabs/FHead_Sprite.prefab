@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 60e2314090cf1c342a3b614e3c1e765e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6, y: 8}
@@ -118,12 +118,12 @@ MonoBehaviour:
   talking: 0
   isLeft: 1
   moveSpeed: 2
-  endPos: -1.15
+  endPos: 1.15
   gamePos: 5.35
   hS: 0
   badFx: {fileID: 4993318140112442563, guid: ce22aadbc87bf554d813b53e2c4156a6, type: 3}
   goodFx: {fileID: 7705898410383469080, guid: a9cef899fdf672d4285e350c7927c9f3, type: 3}
-  type: 0
+  type: 1
   loopType: 0
 --- !u!114 &2916090744630523864
 MonoBehaviour:

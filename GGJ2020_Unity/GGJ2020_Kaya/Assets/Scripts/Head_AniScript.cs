@@ -33,6 +33,7 @@ public class Head_AniScript : MonoBehaviour
     {
       GetComponent<SpriteRenderer>().flipX = true;
       gamePos *= -1;
+			endPos *= -1;
     }
     SetIsTalking(talking);
     hS = HeadState.beginGame;
@@ -67,9 +68,11 @@ public class Head_AniScript : MonoBehaviour
         }
       case HeadState.headButt:
         {
-          
+
+		  
           if (isLeft && endPos < transform.position.x +1)
           {
+			AudioStatics.PlayOneShotAtLocation("event:/UI/ui_back", Vector3.zero);
             transform.rotation = Quaternion.Euler(0, 0, -30);
 
             hS = HeadState.kissFinish;

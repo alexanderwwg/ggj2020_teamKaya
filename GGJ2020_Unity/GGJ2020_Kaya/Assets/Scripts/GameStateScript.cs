@@ -17,8 +17,8 @@ public class GameStateScript : MonoBehaviour
 	int won = 0;
 	bool leftPersonTalk = true;
 
-	public Head_AniScript leftPerson;
-	public Head_AniScript rightPerson;
+	private Head_AniScript leftPerson;
+	private Head_AniScript rightPerson;
 
 	Ingame_BGM bgm;
 
@@ -26,6 +26,29 @@ public class GameStateScript : MonoBehaviour
 
 	float maxTimer = 6;
 	float timer = 0;
+
+	public List<GameObject> peopleHeads;
+
+	private void Awake()
+	{
+
+
+		int leftheadnum = Random.Range(0, peopleHeads.Count);
+		int rightheadnum = Random.Range(0, peopleHeads.Count);
+
+		if (rightheadnum == leftheadnum) rightheadnum--;
+
+		if (rightheadnum < 0) rightheadnum = peopleHeads.Count - 1;
+		if (rightheadnum >= peopleHeads.Count) rightheadnum = 0;
+
+
+		leftPerson = Instantiate(peopleHeads[leftheadnum], new Vector3(-11, -1.3f, 60.69f), Quaternion.identity).GetComponent<Head_AniScript>();
+		rightPerson = Instantiate(peopleHeads[rightheadnum], new Vector3(11, -1.3f, 56.69f), Quaternion.identity).GetComponent<Head_AniScript>();
+
+		leftPerson.isLeft = true;
+		rightPerson.isLeft = false;
+
+	}
 
 	// Start is called before the first frame update
 	void Start()
@@ -37,8 +60,7 @@ public class GameStateScript : MonoBehaviour
 		bgm = FindObjectOfType<Ingame_BGM>();
 
 		threshold = progressBar.checkPoint2;
-		timer = maxTimer;
-	}
+		timer = maxTimer;}
 
 	// Update is called once per frame
 	void Update()
@@ -91,9 +113,12 @@ public class GameStateScript : MonoBehaviour
 					Debug.Log("Matched State");
 					Debug.Log(LevelData.Waves.Length);
 
-					bgm.UpdateBGM(gameCounter / 4);
+					bgm.UpdateBGM(gameCounter / 2);
 
 					progressBar.progress = (float)won / LevelData.Waves.Length;
+
+					leftPerson.SetIsTalking(false);
+					rightPerson.SetIsTalking(false);
 
 					if (gameCounter >= LevelData.Waves.Length)
 					{
@@ -109,12 +134,20 @@ public class GameStateScript : MonoBehaviour
 						Speaker.GetComponent<LineController>().switchWave(type, amplitude, frequency);
 						if (!leftPersonTalk)
 						{
+							if (frequency > 1.4f) leftPerson.loopType = Head_AniScript.LoopType.fast;
+							else leftPerson.loopType = Head_AniScript.LoopType.slow;
+
 							leftPerson.SetIsTalking(true);
+
+							
 							rightPerson.GoodJob();
 							timerBar.fillOrigin = 0;
 						}
 						else
 						{
+							if (frequency > 1.4f) rightPerson.loopType = Head_AniScript.LoopType.fast;
+							else rightPerson.loopType = Head_AniScript.LoopType.slow;
+
 							rightPerson.SetIsTalking(true);
 							leftPerson.GoodJob();
 							timerBar.fillOrigin = 1;
@@ -130,7 +163,11 @@ public class GameStateScript : MonoBehaviour
 				gameCounter++;
 				Debug.Log("Not Matched State");
 				Debug.Log(LevelData.Waves.Length);
-				bgm.UpdateBGM(gameCounter / 4);
+				bgm.UpdateBGM(gameCounter / 2);
+
+				leftPerson.SetIsTalking(false);
+				rightPerson.SetIsTalking(false);
+
 				if (gameCounter >= LevelData.Waves.Length)
 				{
 					EndGame();
@@ -145,11 +182,17 @@ public class GameStateScript : MonoBehaviour
 					Speaker.GetComponent<LineController>().switchWave(type, amplitude, frequency);
 					if (!leftPersonTalk)
 					{
+						if (frequency > 1.4f) leftPerson.loopType = Head_AniScript.LoopType.fast;
+						else leftPerson.loopType = Head_AniScript.LoopType.slow;
+
 						leftPerson.SetIsTalking(true);
 						timerBar.fillOrigin = 0;
 					}
 					else
 					{
+						if (frequency > 1.4f) rightPerson.loopType = Head_AniScript.LoopType.fast;
+						else rightPerson.loopType = Head_AniScript.LoopType.slow;
+
 						rightPerson.SetIsTalking(true);
 						timerBar.fillOrigin = 1;
 					}
