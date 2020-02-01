@@ -92,12 +92,12 @@ public class Head_AniScript : MonoBehaviour
           if (isLeft && gamePos < transform.position.x)
           {
             hS = HeadState.idle;
-            SetIsTalking(true);
+            //SetIsTalking(true);
           }
           if (!isLeft && gamePos > transform.position.x)
           {
             hS = HeadState.idle;
-            SetIsTalking(true);
+            //SetIsTalking(true);
           }
           break;
         }

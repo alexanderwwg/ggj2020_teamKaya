@@ -27,8 +27,8 @@ public class ProgressBar : MonoBehaviour
 
   [Header("Component References")]
   public Transform[] checkpoints;
-
-  private int starAmt = 0;
+	[HideInInspector]
+  public int starAmt = 0;
 
 
   public List<SpriteRenderer> starSpriteRends;
