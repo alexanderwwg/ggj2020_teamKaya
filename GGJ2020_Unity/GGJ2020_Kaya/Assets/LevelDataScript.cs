@@ -10,7 +10,7 @@ public class LevelDataScript : MonoBehaviour
     void Start()
     {
         Waves = new Wave[3];
-        Waves[0] = new Wave(2f, 1f,WaveType.sine);
+        Waves[0] = new Wave(2f, 0.5f,WaveType.sine);
         Waves[1] = new Wave(2f,4f,WaveType.sine);
         Waves[2] = new Wave(0.5f,3f,WaveType.sine); 
         Debug.Log("The number of waves is");
@@ -31,8 +31,8 @@ public class Wave
     public WaveType type;
     public Wave(float waveAmplitude, float waveFrequency, WaveType waveType)
     {
-        amplitude = amplitude;
-        frequency = frequency;
+        amplitude = waveAmplitude;
+        frequency = waveFrequency;
         type = waveType;
     }
 }

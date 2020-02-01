@@ -38,7 +38,7 @@ public class GameStateScript : MonoBehaviour
             }
             case Game.game:
             {
-                Debug.Log("Game State");
+                //Debug.Log("Game State");
                 break;
             }
             case Game.matched:
