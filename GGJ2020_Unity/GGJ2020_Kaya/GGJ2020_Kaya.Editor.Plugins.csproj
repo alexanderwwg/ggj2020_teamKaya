@@ -686,6 +686,10 @@
       <Project>{B5248AB1-B669-1749-EAFD-1F82D656E953}</Project>
       <Name>GGJ2020_Kaya.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="GGJ2020_Kaya.csproj">
+      <Project>{7F13D8B3-5888-0D6A-BAA8-5446157D8487}</Project>
+      <Name>GGJ2020_Kaya</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Editor\FmodResonanceAudioRoomEditor.cs" />
@@ -713,6 +717,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
+    <None Include="Assets\ProgressBarStuff\progressbar assets\scrolling shader bar.shader" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\PolygonChangeShapeWindow.uxml" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteEditor.uss" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteFrameModuleInspector.uxml" />
