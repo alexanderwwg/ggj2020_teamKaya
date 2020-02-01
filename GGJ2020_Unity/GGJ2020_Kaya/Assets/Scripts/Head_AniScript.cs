@@ -14,6 +14,9 @@ public class Head_AniScript : MonoBehaviour
   public enum headState { idle, kissMove, kissFinish, beginGame, headButt };
   public headState hS;
   private Transform transform;
+
+  public GameObject badFx, goodFx;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -24,7 +27,7 @@ public class Head_AniScript : MonoBehaviour
     }
     SetIsTalking(talking);
     transform = GetComponent<Transform>();
-    hS = headState.headButt;
+    hS = headState.beginGame;
   }
 
   // Update is called once per frame
@@ -42,10 +45,12 @@ public class Head_AniScript : MonoBehaviour
           if (isLeft && endPos < transform.position.x)
           {
             hS = headState.kissFinish;
+            Instantiate(goodFx, Vector3.zero, Quaternion.identity);
           }
           if (!isLeft && endPos > transform.position.x)
           {
             hS = headState.kissFinish;
+            Instantiate(goodFx, Vector3.zero, Quaternion.identity);
           }
           break;
         }
@@ -57,12 +62,14 @@ public class Head_AniScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, -30);
 
             hS = headState.kissFinish;
+            Instantiate(badFx, Vector3.zero, Quaternion.identity);
           }
           else if (!isLeft && endPos > transform.position.x -1)
           {
             transform.rotation = Quaternion.Euler(0, 0, 30);
 
             hS = headState.kissFinish;
+            Instantiate(badFx, Vector3.zero, Quaternion.identity);
           }
           else
            MoveHead(moveSpeed);

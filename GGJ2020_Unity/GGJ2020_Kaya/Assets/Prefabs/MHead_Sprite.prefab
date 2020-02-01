@@ -115,3 +115,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3057591484804853605}
   talking: 0
+  isLeft: 0
+  moveSpeed: 0
+  endPos: 0
+  gamePos: 5.35
+  hS: 0
+  badFx: {fileID: 4993318140112442563, guid: ce22aadbc87bf554d813b53e2c4156a6, type: 3}
+  goodFx: {fileID: 7705898410383469080, guid: a9cef899fdf672d4285e350c7927c9f3, type: 3}
