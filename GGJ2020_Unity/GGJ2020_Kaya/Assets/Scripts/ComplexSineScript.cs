@@ -5,17 +5,31 @@ using UnityEngine;
 public class ComplexSineScript : MonoBehaviour
 {
     public int numberOfPoints = 200;
+    [Range(0,100)]
+
     public float length = 30;
+    [Range(0,10)]
+
     public float masterAmplitude = 1;
+    [Range(0,10)]
+
     public float amplitude = 1;
+    [Range(0,10)]
+
     public float frequency = 1;
+    [Range(0,10)]
+    
     public float offset = 0;
+    [Range(0,10)]
     public float amplitude2 = 1;
+    [Range(0,10)]
 
     public float frequency2 = 2;
+    [Range(0,10)]
     
     public float offset2 = 3;
     public bool isBreathing = false;
+    public float direction = 1;
 
     private LineRenderer lineRenderer;
     private Vector3 pos;

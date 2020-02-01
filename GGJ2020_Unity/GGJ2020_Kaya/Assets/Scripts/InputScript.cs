@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputScript : MonoBehaviour
 {
     public GameObject listenLine;
-    public SineScript sineScript;
+    public SineWaveScript sineScript;
     public float amplitudeSpeed = 1f;
     public float frequencySpeed = 0.5f;
     public float offsetSpeed = 1f;
@@ -14,7 +14,7 @@ public class InputScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sineScript = listenLine.GetComponent<SineScript>();
+        sineScript = listenLine.GetComponent<SineWaveScript>();
     }
 
     // Update is called once per frame

@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SineScript : MonoBehaviour
+public class SineWaveScript : MonoBehaviour
 {
     public int numberOfPoints = 200;
+    [Range(0,100)]
     public float length = 30;
+    [Range(0,10)]
+
     public float amplitude = 1;
+    [Range(0,10)]
+
     public float frequency = 1;
     public float offset = 0;
+    public int direction = 0;
 
     private LineRenderer lineRenderer;
     private Vector3 pos;
@@ -33,7 +39,7 @@ public class SineScript : MonoBehaviour
         {
             points[i] = new Vector3(
                 pos.x + i * step,
-                pos.y + Mathf.Sin((i*step + t + offset)*frequency) * amplitude,
+                pos.y + Mathf.Sin((i*step + t*direction + offset)*frequency) * amplitude,
                 0.0f);
         }
         lineRenderer.SetPositions(points);
