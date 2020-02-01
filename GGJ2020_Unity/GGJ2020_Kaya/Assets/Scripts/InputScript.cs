@@ -15,11 +15,13 @@ public class InputScript : MonoBehaviour
     public float amplitudeFactor = 3f;
     public float startDelay = 3;
     public float startTime;
+    public LineController lineController;
 
     public bool isOn= false;
     // Start is called before the first frame update
     void Start()
     {
+        lineController = Listener.GetComponent<LineController>();
         listenerSineScript = Listener.GetComponent<SineWaveScript>();
         startTime = Time.time;
         Speaker.GetComponent<Renderer>().enabled = false;
@@ -33,19 +35,28 @@ public class InputScript : MonoBehaviour
         {
             float finalX = WithinRange(Input.mousePosition.x, 0, Screen.width);
             float finalY = WithinRange(Input.mousePosition.y, 0, Screen.height);
-            listenerSineScript.frequency = 1/(finalX/(Screen.width/2) * frequencyFactor);
-            listenerSineScript.amplitude = finalY/(Screen.height/2) * amplitudeFactor;
-            //InputSCript.mousePosition.y
-            // Debug.Log(listenerSineScript.frequency);
-            // Debug.Log(listenerSineScript.amplitude);
+            float frequency = 1/(finalX/(Screen.width/2) * frequencyFactor);
+            float amplitude = finalY/(Screen.height/2) * amplitudeFactor;
 
-            listenerSineScript.frequency +=Input.GetAxis("Horizontal") * Time.deltaTime * frequencySpeed;
-            listenerSineScript.amplitude +=Input.GetAxis("Vertical") * Time.deltaTime * amplitudeSpeed;
-            Debug.Log("We are on!");
+            frequency +=Input.GetAxis("Horizontal") * Time.deltaTime * frequencySpeed;
+            amplitude +=Input.GetAxis("Vertical") * Time.deltaTime * amplitudeSpeed;
+            if(Input.GetKey("1"))
+            {
+                lineController.switchWave(WaveType.sine, 1, 1);
+            }
+            if(Input.GetKey("2"))
+            {
+                lineController.switchWave(WaveType.square, 1, 1);
+            }
+            if(Input.GetKey("3"))
+            {
+                lineController.switchWave(WaveType.triangle, 1, 1);
+            }
+            lineController.changeAttributes(amplitude, frequency);
+            
         }
         else
         {
-            Debug.Log("check if timehas elapsed");
             if (Time.time - startTime > startDelay)
             {
                 isOn = true;

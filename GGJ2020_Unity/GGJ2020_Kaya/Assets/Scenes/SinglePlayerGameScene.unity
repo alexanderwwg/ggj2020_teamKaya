@@ -854,6 +854,7 @@ GameObject:
   - component: {fileID: 1276733680}
   - component: {fileID: 1276733684}
   - component: {fileID: 1276733683}
+  - component: {fileID: 1276733685}
   m_Layer: 0
   m_Name: Listening Sine Line
   m_TagString: Untagged
@@ -1028,6 +1029,21 @@ MonoBehaviour:
   offset: 0
   direction: 1
   isOn: 0
+--- !u!114 &1276733685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276733679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb553f189ab24a42b32f5d8cf893419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sineWave: {fileID: 0}
+  triangleWave: {fileID: 0}
+  squareWave: {fileID: 0}
 --- !u!1 &1416795791
 GameObject:
   m_ObjectHideFlags: 0
