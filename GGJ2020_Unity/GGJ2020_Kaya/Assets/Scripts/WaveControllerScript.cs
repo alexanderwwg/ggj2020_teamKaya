@@ -12,6 +12,7 @@ public class WaveControllerScript : MonoBehaviour
     private SineWaveScript listeningSine;
     private SquareWaveScript listeningSquare;
     private TriangleWaveScript listeningTriangle;
+    public float winMargin;
     public GameObject speaking;
     public GameObject listening;
     public float amplitudeDifference;
@@ -32,6 +33,24 @@ public class WaveControllerScript : MonoBehaviour
     {
         if(speakingSine.isOn)
         {
+            /*if (listeningSine.amplitude > speakingSine.amplitude)
+            {
+                amplitudeDifference = 1-listeningSine.amplitude/speakingSine.amplitude;
+            }
+            else
+            {
+                amplitudeDifference = (listeningSine.amplitude)/speakingSine.amplitude;
+            }
+
+            if (listeningSine.frequency > speakingSine.frequency)
+            {
+                frequencyDifference = 1-listeningSine.frequency/speakingSine.frequency;
+            }
+            else
+            {
+                frequencyDifference = (listeningSine.frequency)/speakingSine.frequency;
+            }*/
+
             amplitudeDifference = Mathf.Clamp(Mathf.Abs(listeningSine.amplitude-speakingSine.amplitude), 0, 1);
             frequencyDifference = Mathf.Clamp(Mathf.Abs(listeningSine.frequency-speakingSine.frequency), 0, 1);
             
@@ -47,5 +66,11 @@ public class WaveControllerScript : MonoBehaviour
             frequencyDifference = Mathf.Clamp(Mathf.Abs(listeningSquare.frequency-speakingSquare.frequency), 0, 1);
         }
         closeness = 1-(amplitudeDifference + frequencyDifference)/2;
+        if (closeness > winMargin)
+        {
+            Debug.Log(closeness + " " + winMargin);
+            GameStateScript.State = Game.matched;
+            
+        }
     }
 }

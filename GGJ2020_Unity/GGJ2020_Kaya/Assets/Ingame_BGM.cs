@@ -57,9 +57,9 @@ public class Ingame_BGM : MonoBehaviour
 
   }
 
-  private void OnValidate()
-  {
-    UpdateBoth(waveMatching, bgmLevel);
-  }
+  // private void OnValidate()
+  // {
+  //   UpdateBoth(waveMatching, bgmLevel);
+  // }
 
 }
