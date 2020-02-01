@@ -92,8 +92,6 @@ public class ProgressBar : MonoBehaviour
           starAmt++;
           starSpriteRends[0].color = Color.white;
           particleSystems[0].Play();
-
-          AudioStatics.PlayOneShotAtLocation("event:/sfx_star", Vector3.zero);
         }
         break;
       case 1:
@@ -103,8 +101,6 @@ public class ProgressBar : MonoBehaviour
           starSpriteRends[1].color = Color.white;
           starSpriteRends[2].color = Color.white;
           particleSystems[1].Play();
-
-          AudioStatics.PlayOneShotAtLocation("event:/sfx_star", Vector3.zero);
         }
         break;
       case 2:
@@ -115,8 +111,6 @@ public class ProgressBar : MonoBehaviour
           starSpriteRends[4].color = Color.white;
           starSpriteRends[5].color = Color.white;
           particleSystems[2].Play();
-
-          AudioStatics.PlayOneShotAtLocation("event:/sfx_star", Vector3.zero);
         }
         break;
     }
