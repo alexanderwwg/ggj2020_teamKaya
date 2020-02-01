@@ -66,11 +66,6 @@ public class WaveControllerScript : MonoBehaviour
             frequencyDifference = Mathf.Clamp(Mathf.Abs(listeningSquare.frequency-speakingSquare.frequency), 0, 1);
         }
         closeness = 1-(amplitudeDifference + frequencyDifference)/2;
-        if (closeness > winMargin)
-        {
-            Debug.Log(closeness + " " + winMargin);
-            GameStateScript.State = Game.matched;
-            
-        }
+
     }
 }
