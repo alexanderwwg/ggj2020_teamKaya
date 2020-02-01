@@ -12,7 +12,6 @@ public class WaveControllerScript : MonoBehaviour
     private SineWaveScript listeningSine;
     private SquareWaveScript listeningSquare;
     private TriangleWaveScript listeningTriangle;
-    public float winMargin;
     public GameObject speaking;
     public GameObject listening;
     public float amplitudeDifference;
@@ -49,6 +48,7 @@ public class WaveControllerScript : MonoBehaviour
         }
         closeness = 1-(amplitudeDifference + frequencyDifference)/2;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         if (closeness > winMargin)
         {
@@ -56,5 +56,7 @@ public class WaveControllerScript : MonoBehaviour
             
         }
 >>>>>>> parent of 7e00497... Conflict resolution
+=======
+>>>>>>> parent of 156bf4e... Initial GameLoop Controller commit
     }
 }
