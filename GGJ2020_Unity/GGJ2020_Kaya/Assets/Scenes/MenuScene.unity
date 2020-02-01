@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1149,8 +1149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c42ccb46e5d9ef42b9c417ea0b7907d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalPos: {x: 0, y: 100}
-  moveSpeed: 50
+  finalPos: {x: 0, y: 2}
+  moveSpeed: 10
 --- !u!1 &2124537316
 GameObject:
   m_ObjectHideFlags: 0

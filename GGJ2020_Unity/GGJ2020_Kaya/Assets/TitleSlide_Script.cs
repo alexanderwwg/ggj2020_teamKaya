@@ -7,23 +7,24 @@ public class TitleSlide_Script : MonoBehaviour
     public Vector2 finalPos;
     public float moveSpeed;
 
-    private RectTransform transform;
+    private RectTransform rectransform;
     private bool moving;
     // Start is called before the first frame update
     void Start()
     {
-        transform = GetComponent<RectTransform>();
+        rectransform = GetComponent<RectTransform>();
         moving = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y > finalPos.y)
+    print(rectransform.position.y + " " + finalPos.y);
+        if(rectransform.position.y > finalPos.y)
         {
-            Vector3 newPos = transform.position;
-            newPos += Vector3.down * moveSpeed;
-            transform.position = newPos;
+            Vector3 newPos = rectransform.position;
+            newPos += Vector3.down * moveSpeed *Time.deltaTime;
+            rectransform.position = newPos;
             //transform.Translate((Vector3.down * Time.deltaTime) * moveSpeed);
         }
         else
