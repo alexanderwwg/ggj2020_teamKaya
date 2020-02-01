@@ -52,7 +52,6 @@ public class WaveControllerScript : MonoBehaviour
 =======
         if (closeness > winMargin)
         {
-            Debug.Log(closeness + " " + winMargin);
             GameStateScript.State = Game.matched;
             
         }
