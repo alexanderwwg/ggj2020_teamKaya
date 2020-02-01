@@ -633,8 +633,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Audio\AudioStatics.cs" />
+    <Compile Include="Assets\Scripts\Audio\SFXEmitterUpdate.cs" />
+    <Compile Include="Assets\Scripts\ComplexSineScript.cs" />
+    <Compile Include="Assets\Scripts\GameControllerScript.cs" />
     <Compile Include="Assets\Scripts\Head_AniScript.cs" />
+    <Compile Include="Assets\Scripts\InputScript.cs" />
+    <Compile Include="Assets\Scripts\ListeningSineScript.cs" />
     <Compile Include="Assets\Scripts\MenuButton_Script.cs" />
+    <Compile Include="Assets\Scripts\SineScript.cs" />
+    <Compile Include="Assets\Scripts\SineScript2.cs" />
+    <Compile Include="Assets\Scripts\SpeakingSineScript.cs" />
+    <Compile Include="Assets\Scripts\TriangleWaveScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
