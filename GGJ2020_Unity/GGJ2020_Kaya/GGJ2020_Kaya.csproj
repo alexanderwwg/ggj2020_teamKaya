@@ -645,6 +645,7 @@
     <Compile Include="Assets\Scripts\SineScript2.cs" />
     <Compile Include="Assets\Scripts\SpeakingSineScript.cs" />
     <Compile Include="Assets\Scripts\TriangleWaveScript.cs" />
+    <Compile Include="Assets\TitleSlide_Script.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
