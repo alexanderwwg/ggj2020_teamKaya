@@ -7,12 +7,12 @@ public class WaveControllerScript : MonoBehaviour
     public float closeness;
     private SineWaveScript sineWave;
     private SquareWaveScript squareWave;
-    private TriangeWaveScript triangleWave;
+    private TriangleWaveScript triangleWave;
     // Start is called before the first frame update
     void Start()
     {
         sineWave = GetComponent<SineWaveScript>();
-        squareWave = GetComponent<TquareWaveScript>();
+        squareWave = GetComponent<SquareWaveScript>();
         triangleWave = GetComponent<TriangleWaveScript>();
     }
 
