@@ -13,6 +13,7 @@ public class SquareWaveScript : MonoBehaviour
     public float frequency = 1;
     public float offset = 0;
     public float direction = 1;
+    public bool isOn = false;
 
     private LineRenderer lineRenderer;
     private Vector3 pos;
@@ -30,43 +31,44 @@ public class SquareWaveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        numberOfPoints = (int)(length/(1/frequency)*2);
-        lineRenderer.positionCount = numberOfPoints;
-        //creates the sine curve from the amplitude, frequency and offset
-        var points = new Vector3[(int)(length/(1/frequency)*2)];
-        float step = (length/(numberOfPoints/2));
-        var t = Time.time;
-        // points[0] = new Vector3(pos.x, pos.y -amplitude, 0.0f);
-        for (int i = 0; i < numberOfPoints; i+=2)
+        if(isOn)
         {
-            Debug.Log(t%2);
-
-            if(((i)/2)%2 == 0)
+            numberOfPoints = (int)(length/(1/frequency)*2);
+            lineRenderer.positionCount = numberOfPoints;
+            //creates the sine curve from the amplitude, frequency and offset
+            var points = new Vector3[(int)(length/(1/frequency)*2)];
+            float step = (length/(numberOfPoints/2));
+            var t = Time.time;
+            // points[0] = new Vector3(pos.x, pos.y -amplitude, 0.0f);
+            for (int i = 0; i < numberOfPoints; i+=2)
             {
-            points[i] = new Vector3(
-                pos.x + i * step+(t*direction/2)%frequency*4,
-                pos.y +amplitude * -1,
-                0.0f);
-            points[i+1] = new Vector3(
-                pos.x + i * step+(t*direction/2)%frequency*4,
-                pos.y -amplitude * -1,
-                0.0f);
+                Debug.Log(t%2);
 
-            }
-            else
-            {
+                if(((i)/2)%2 == 0)
+                {
                 points[i] = new Vector3(
-                pos.x + i * step + offset+(t*direction/2)%frequency*4,
-                pos.y -amplitude * -1,
-                0.0f);
-                points[i+1] = new Vector3(
-                    pos.x + i * step + offset+(t*direction/2)%frequency*4,
+                    pos.x + i * step+(t*direction/2)%frequency*4,
                     pos.y +amplitude * -1,
                     0.0f);
-            }
+                points[i+1] = new Vector3(
+                    pos.x + i * step+(t*direction/2)%frequency*4,
+                    pos.y -amplitude * -1,
+                    0.0f);
 
-            
-        }
+                }
+                else
+                {
+                    points[i] = new Vector3(
+                    pos.x + i * step + offset+(t*direction/2)%frequency*4,
+                    pos.y -amplitude * -1,
+                    0.0f);
+                    points[i+1] = new Vector3(
+                        pos.x + i * step + offset+(t*direction/2)%frequency*4,
+                        pos.y +amplitude * -1,
+                        0.0f);
+                }
+            }
         lineRenderer.SetPositions(points);
+        }
     }
 }

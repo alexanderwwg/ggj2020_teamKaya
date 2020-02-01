@@ -488,17 +488,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269406125}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bbf5dfcff4fd25458a98f4151bb8b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
   direction: 1
+  isOn: 0
 --- !u!114 &1269406127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,11 +513,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 200
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
-  direction: 0
+  direction: 1
+  isOn: 1
 --- !u!120 &1269406128
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269406125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 0, z: 70}
+  m_LocalPosition: {x: -5, y: 0, z: 70}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -634,17 +636,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269406125}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e55e82a4b63bce445a1427a773649147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
   direction: 1
+  isOn: 0
 --- !u!1 &1276733679
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,11 +681,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 200
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
-  direction: 0
+  direction: 1
+  isOn: 1
 --- !u!120 &1276733681
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -800,17 +804,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276733679}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bbf5dfcff4fd25458a98f4151bb8b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
   direction: 1
+  isOn: 0
 --- !u!114 &1276733684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,17 +823,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276733679}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e55e82a4b63bce445a1427a773649147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPoints: 10
-  length: 30
+  length: 60
   amplitude: 1
   frequency: 1
   offset: 0
   direction: 1
+  isOn: 0
 --- !u!1 &1416795791
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +846,7 @@ GameObject:
   - component: {fileID: 1416795794}
   - component: {fileID: 1416795793}
   - component: {fileID: 1416795792}
+  - component: {fileID: 1416795795}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -899,6 +906,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416795795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416795791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f41c282a2f49a48a847914a04de285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeness: 0
+  speaking: {fileID: 1269406125}
+  listening: {fileID: 1276733679}
 --- !u!1 &1471517383
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,8 @@ public class SineWaveScript : MonoBehaviour
 
     public float frequency = 1;
     public float offset = 0;
-    public int direction = 0;
+    public int direction = 1;
+    public bool isOn = false;
 
     private LineRenderer lineRenderer;
     private Vector3 pos;
@@ -31,6 +32,8 @@ public class SineWaveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isOn)
+        {
         //creates the sine curve from the amplitude, frequency and offset
         var points = new Vector3[numberOfPoints];
         float step = length / numberOfPoints;
@@ -43,5 +46,6 @@ public class SineWaveScript : MonoBehaviour
                 0.0f);
         }
         lineRenderer.SetPositions(points);
+        }
     }
 }
