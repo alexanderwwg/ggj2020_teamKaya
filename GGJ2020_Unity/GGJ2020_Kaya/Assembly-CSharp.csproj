@@ -62,8 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameStateScript.cs" />
-    <Compile Include="Assets\LevelDataScript.cs" />
+    <Compile Include="Assets\Ingame_BGM.cs" />
     <Compile Include="Assets\ProgressBarStuff\progressbar assets\ProgressBar.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioStatics.cs" />
     <Compile Include="Assets\Scripts\Audio\SFXEmitterUpdate.cs" />

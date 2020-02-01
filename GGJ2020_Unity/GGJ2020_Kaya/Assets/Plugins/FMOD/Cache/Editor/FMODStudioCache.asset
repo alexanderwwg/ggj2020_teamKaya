@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8424265943606710731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char3_fast_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char3_fast_loop
+  guid: 4fa5ec0dfc1ac747b76635201b851eef
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6450791301303967573}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4166
 --- !u!114 &-8390471484708227200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +41,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8184990061214587499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char1_good
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char1_good
+  guid: 41c08185b437c742b18492acd2fe551c
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1433
 --- !u!114 &-8184614697012958962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,14 +97,15 @@ MonoBehaviour:
   Path: event:/UI/ui_mouseOver
   guid: 79760192143df242bc4acb9610977ac0
   Banks:
-  - {fileID: 237627939016516434}
+  - {fileID: -4663933629352524532}
+  - {fileID: 1411777562210595792}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 38
+  Length: 1000
 --- !u!114 &-7548748540643026811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +124,30 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7396214274691130795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char4_fast_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char4_fast_loop
+  guid: 87ec00ef3b1bfc4f82d931051707a5a7
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3965442694893571175}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5142
 --- !u!114 &-7319084169780493909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +163,8 @@ MonoBehaviour:
   Path: event:/UI/ui_back
   guid: 29e9f06d7e64f54cbee3a2534a9690c0
   Banks:
-  - {fileID: 237627939016516434}
+  - {fileID: -4663933629352524532}
+  - {fileID: 1411777562210595792}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -117,6 +190,146 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6031311363498464822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_star
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_star
+  guid: 4150c27beea1494ab57c97543573a3bf
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1600
+--- !u!114 &-5754854221908925350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162023342047238
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5635311517005335019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161809870000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5520593805458072320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bgm_mainmenu
+  m_EditorClassIdentifier: 
+  Path: event:/bgm_mainmenu
+  guid: a05be0df4d83f644b94edf205f96b10a
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15732
+--- !u!114 &-5405948207761139860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char2_good
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char2_good
+  guid: ffd642d11736864b9ffb44ffd0ec2ebf
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &-5006909223870388857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char3_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &-4663933629352524532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Main.bank
+  SubDir: 
+  lastModified: 637161809870000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4260526940274362843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,14 +398,15 @@ MonoBehaviour:
   Path: event:/UI/ui_confirm
   guid: 5366f5453decac439df455b558a35b71
   Banks:
-  - {fileID: 237627939016516434}
+  - {fileID: -4663933629352524532}
+  - {fileID: 1411777562210595792}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1103
+  Length: 0
 --- !u!114 &-3080745705179850613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,12 +422,13 @@ MonoBehaviour:
   Path: event:/sfx_sineWaveEmitter
   guid: b32801a9241d4745b0dee20e3b5736d6
   Banks:
-  - {fileID: 237627939016516434}
+  - {fileID: -4663933629352524532}
+  - {fileID: 1411777562210595792}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7171021073366535590}
+  - {fileID: -2669557070960468460}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
@@ -234,6 +449,63 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-2687648072429682455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_good
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_good
+  guid: 4c81ca232ae6a04ba8a60b4ee62f3d1d
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1900
+--- !u!114 &-2669557070960468460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_sineWaveEmitter/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &-2584798026713346484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char1_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &-2400879694029688009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,7 +541,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-2100713862283459353
+--- !u!114 &-2181002476718682640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,15 +550,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char3_slow_loop
   m_EditorClassIdentifier: 
-  Path: ../../GGJ2020_FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162122343371317
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
+  Path: event:/vo_char3_slow_loop
+  guid: 628245ce2ee58d4a9a5ec799f107466a
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5006909223870388857}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4566
 --- !u!114 &-1551503184428641555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +618,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1094783227175633979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_kiss_fail
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_kiss_fail
+  guid: 856349bad278b94f95b578e8e3b0fc88
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1033418100335465817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +658,23 @@ MonoBehaviour:
   lastModified: 637161707304471980
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-701578742153435739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_sineWaveEmitter/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &-473421144077190551
 MonoBehaviour:
@@ -410,6 +728,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-93940206114939119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char3_good
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char3_good
+  guid: d2b92809cf7dfc47bcab42ffbf1f7b82
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1433
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,20 +765,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 4891070009150433797}
-  - {fileID: 237627939016516434}
-  - {fileID: -2100713862283459353}
+  - {fileID: 1411777562210595792}
+  - {fileID: -5754854221908925350}
   EditorEvents:
   - {fileID: -3080745705179850613}
   - {fileID: -7319084169780493909}
   - {fileID: 7405668024707629009}
   - {fileID: -3449667488225456977}
   - {fileID: -8158758016995663473}
+  - {fileID: 1633495236082525135}
+  - {fileID: 2529842480296958386}
+  - {fileID: 1098611134385705521}
+  - {fileID: -6031311363498464822}
+  - {fileID: -8184990061214587499}
+  - {fileID: 5385076480627156048}
+  - {fileID: -2687648072429682455}
+  - {fileID: -8424265943606710731}
+  - {fileID: -2181002476718682640}
+  - {fileID: 997326416076206770}
+  - {fileID: 1418749888239695904}
+  - {fileID: 8131462993582498889}
+  - {fileID: -1094783227175633979}
+  - {fileID: -7396214274691130795}
+  - {fileID: -5520593805458072320}
+  - {fileID: -93940206114939119}
+  - {fileID: 2675055367311292976}
+  - {fileID: -5405948207761139860}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2100713862283459353}
+  - {fileID: -5754854221908925350}
   StringsBanks:
   - {fileID: 4891070009150433797}
-  stringsBankWriteTime: 637162122343381296
+  stringsBankWriteTime: 637162023342234174
   cacheVersion: 3
 --- !u!114 &185236977565508826
 MonoBehaviour:
@@ -457,7 +816,7 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
---- !u!114 &237627939016516434
+--- !u!114 &501770611323644848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,14 +826,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Main.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../GGJ2020_FMOD/Build/Desktop/Main.bank
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637162122343361355
+  lastModified: 637161809870000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &671003697797663985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +851,136 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &805707837629126874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char2_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &997326416076206770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char2_slow_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char2_slow_loop
+  guid: 6366c64f7b621c4e8745f608ee11b01b
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 805707837629126874}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &1098611134385705521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char2_fast_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char2_fast_loop
+  guid: 2c5e12d60405134093695c232d89e180
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3848003623336595535}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &1411777562210595792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Main.bank
+  SubDir: 
+  lastModified: 637162023341917605
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1418749888239695904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char1_fast_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char1_fast_loop
+  guid: 76777cce89b1d54fac8e0a7dab46f74b
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6428041967380282635}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4333
+--- !u!114 &1633495236082525135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char4_good
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char4_good
+  guid: 023250a98fe6e74c977f1f31ace2d154
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1141
 --- !u!114 &2375067748913577364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +999,30 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &2529842480296958386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char4_slow_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char4_slow_loop
+  guid: 110dde364a4c5947b6e3dc55de6012da
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6991392570837199671}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6226
 --- !u!114 &2599785375314078457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +1040,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2675055367311292976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_kiss_success
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_kiss_success
+  guid: d82507cf53839148b5328e9c52f8585a
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3500
 --- !u!114 &3290015754003042872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +1081,57 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &3848003623336595535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char2_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &3965442694893571175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char4_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &4211157030806783641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_sineWaveEmitter/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4266737946415186984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,6 +1168,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4864116177197766827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_ingame/stage
+  m_EditorClassIdentifier: 
+  Name: stage
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 1
 --- !u!114 &4891070009150433797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,11 +1199,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../../GGJ2020_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162122343381296
+  lastModified: 637162023342234174
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1030
+    Value: 1920
   Exists: 1
 --- !u!114 &5353642235716281207
 MonoBehaviour:
@@ -617,7 +1221,31 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 0
+  Exists: 1
+--- !u!114 &5385076480627156048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vo_char1_slow_loop
+  m_EditorClassIdentifier: 
+  Path: event:/vo_char1_slow_loop
+  guid: 4c1f228f2b6cdc42801dd95d7f3f33a8
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2584798026713346484}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4266
 --- !u!114 &5539081688488824552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +1282,40 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &6428041967380282635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char1_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &6450791301303967573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char3_fast_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &6463012942371790216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,6 +1334,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6991392570837199671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/vo_char4_slow_loop/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &7095911673194149935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,23 +1386,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &7171021073366535590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/sfx_sineWaveEmitter/Progress
-  m_EditorClassIdentifier: 
-  Name: Progress
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &7405668024707629009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,14 +1401,15 @@ MonoBehaviour:
   Path: event:/UI/ui_click
   guid: 4cd6c4d55b9350419233ad8b0ada9936
   Banks:
-  - {fileID: 237627939016516434}
+  - {fileID: -4663933629352524532}
+  - {fileID: 1411777562210595792}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 108
+  Length: 1000
 --- !u!114 &7888502920145826471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +1428,30 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8131462993582498889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bgm_ingame
+  m_EditorClassIdentifier: 
+  Path: event:/bgm_ingame
+  guid: 7ae24b78e141fd4a928ddcc470e3f178
+  Banks:
+  - {fileID: 1411777562210595792}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4864116177197766827}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28394
 --- !u!114 &8369043682642023138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,4 +1468,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+  Exists: 0
+--- !u!114 &8946933560210982881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main.bank
+  m_EditorClassIdentifier: 
+  Path: ../../GGJ2020_FMOD/Build/Desktop/Main.bank
+  SubDir: 
+  lastModified: 637161809870000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1599826892613147240}
   - component: {fileID: 8944979518537492152}
   - component: {fileID: 5691018369374461216}
+  - component: {fileID: 8141669662275932240}
   m_Layer: 0
   m_Name: BHead_Sprite
   m_TagString: Untagged
@@ -122,3 +123,28 @@ MonoBehaviour:
   hS: 0
   badFx: {fileID: 4993318140112442563, guid: ce22aadbc87bf554d813b53e2c4156a6, type: 3}
   goodFx: {fileID: 7705898410383469080, guid: a9cef899fdf672d4285e350c7927c9f3, type: 3}
+  type: 3
+  loopType: 0
+--- !u!114 &8141669662275932240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011687862529384842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
