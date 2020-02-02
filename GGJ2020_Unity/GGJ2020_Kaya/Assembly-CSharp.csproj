@@ -69,10 +69,14 @@
     <Compile Include="Assets\Scripts\BeginSpeakingScript.cs" />
     <Compile Include="Assets\Scripts\ComplexSineScript.cs" />
     <Compile Include="Assets\Scripts\DestroyParticle.cs" />
+    <Compile Include="Assets\Scripts\EndPanel_Script.cs" />
     <Compile Include="Assets\Scripts\GameControllerScript.cs" />
+    <Compile Include="Assets\Scripts\GameStateScript.cs" />
     <Compile Include="Assets\Scripts\Head_AniScript.cs" />
     <Compile Include="Assets\Scripts\InputScript.cs" />
+    <Compile Include="Assets\Scripts\LevelDataScript.cs" />
     <Compile Include="Assets\Scripts\LevelStarter.cs" />
+    <Compile Include="Assets\Scripts\LineController.cs" />
     <Compile Include="Assets\Scripts\ListeningSineScript.cs" />
     <Compile Include="Assets\Scripts\MenuButton_Script.cs" />
     <Compile Include="Assets\Scripts\SineWaveScript.cs" />
@@ -83,37 +87,37 @@
     <Compile Include="Assets\Scripts\WaveControllerScript.cs" />
     <None Include="Assets\ProgressBarStuff\progressbar assets\scrolling shader bar.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Aqil Hilmi/Downloads/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/ggj2020_teamKaya-dfdac9cdbbedaced7397cab7871061df99b5a670/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/GitHub/ggj2020_teamKaya/GGJ2020_Unity/GGJ2020_Kaya/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity Editors/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
