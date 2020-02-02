@@ -26,6 +26,7 @@ public class InputScript : MonoBehaviour
         startTime = Time.time;
         Speaker.GetComponent<Renderer>().enabled = false;
         Listener.GetComponent<Renderer>().enabled = false;
+		
     }
 
     // Update is called once per frame
@@ -44,15 +45,15 @@ public class InputScript : MonoBehaviour
             {
                 lineController.switchWave(WaveType.sine, 1, 1);
             }
-            if(Input.GetKey("2"))
-            {
-                lineController.switchWave(WaveType.square, 1, 1);
-            }
-            if(Input.GetKey("3"))
-            {
-                lineController.switchWave(WaveType.triangle, 1, 1);
-            }
-            lineController.changeAttributes(amplitude, frequency);
+            //if(Input.GetKey("2"))
+            //{
+            //    lineController.switchWave(WaveType.square, 1, 1);
+            //}
+            //if(Input.GetKey("3"))
+            //{
+            //    lineController.switchWave(WaveType.triangle, 1, 1);
+            //}
+            lineController.changeAttributes(amplitude, Mathf.Clamp(frequency, 0,100));
             
         }
         else
