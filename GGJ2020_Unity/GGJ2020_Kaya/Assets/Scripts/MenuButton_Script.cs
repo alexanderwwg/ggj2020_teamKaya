@@ -27,11 +27,13 @@ public class MenuButton_Script : MonoBehaviour
 
     public void ShowCredits()
     {
+        AudioStatics.PlayOneShotAttached("event:/UI/ui_click", this.gameObject);
         credits.SetActive(true);
     }
 
     public void HideCredits()
     {
+        AudioStatics.PlayOneShotAttached("event:/UI/ui_click", this.gameObject);
         credits.SetActive(false);
     }
 
@@ -44,11 +46,13 @@ public class MenuButton_Script : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        AudioStatics.PlayOneShotAttached("event:/UI/ui_click", this.gameObject);
         SceneManager.LoadScene(scene);
     }
 
     public void QuitGame()
     {
+        AudioStatics.PlayOneShotAttached("event:/UI/ui_clicks", this.gameObject);
         Application.Quit();
     }
 }
