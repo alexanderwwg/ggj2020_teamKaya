@@ -18,7 +18,7 @@ public class TitleSlide_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    print(rectransform.position.y + " " + finalPos.y);
+
         if(rectransform.position.y > finalPos.y)
         {
             Vector3 newPos = rectransform.position;

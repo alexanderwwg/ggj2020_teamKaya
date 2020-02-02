@@ -52,7 +52,7 @@ public class MenuButton_Script : MonoBehaviour
 
     public void QuitGame()
     {
-        AudioStatics.PlayOneShotAttached("event:/UI/ui_clicks", this.gameObject);
+        AudioStatics.PlayOneShotAttached("event:/UI/ui_click", this.gameObject);
         Application.Quit();
     }
 }
