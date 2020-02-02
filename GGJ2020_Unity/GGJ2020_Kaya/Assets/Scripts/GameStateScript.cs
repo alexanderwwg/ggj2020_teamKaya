@@ -26,8 +26,10 @@ public class GameStateScript : MonoBehaviour
 
 	public Image timerBar;
 
-	float maxTimer = 9;
+	float maxTimer = 12;
 	float timer = 0;
+
+	float interpolationStart;
 
 	public List<GameObject> peopleHeads;
 
@@ -59,6 +61,12 @@ public class GameStateScript : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		interpolationStart = Time.time;
+
+		LevelData = GetComponent<LevelDataScript>();
+		waveController = GetComponent<WaveControllerScript>();
+		progressBar = FindObjectOfType<ProgressBar>();
+
 		LevelData = GetComponent<LevelDataScript>();
 		waveController = GetComponent<WaveControllerScript>();
 		progressBar = FindObjectOfType<ProgressBar>();
@@ -76,6 +84,13 @@ public class GameStateScript : MonoBehaviour
 		{
 			case Game.begin:
 				{
+
+					var startMarker = new Vector3(0,-7,0);
+					var endMarker = new Vector3(0,-4,0);
+					float fraction = (Time.time-interpolationStart)/1;
+					progressBar.transform.position = Vector3.Lerp(startMarker, endMarker, fraction);
+					timerBar.fillAmount = 0;
+
 					//Debug.Log(LevelData.Waves.Length);
 					WaveType type = LevelData.Waves[gameCounter].type;
 					float amplitude = LevelData.Waves[gameCounter].amplitude;
@@ -228,6 +243,10 @@ public class GameStateScript : MonoBehaviour
 
 		rightPerson.SetIsTalking(false);
 		leftPerson.SetIsTalking(false);
+
+		Speaker.GetComponent<Renderer>().enabled = false;
+		Listener.GetComponent<Renderer>().enabled = false;
+		timerBar.fillAmount = 0;
 
 		if (progressBar.progress > threshold)
 		{
