@@ -24,7 +24,7 @@ public class Ingame_BGM : MonoBehaviour
     AudioStatics.PlayEvent(bgmEvent);
 
     heads = FindObjectsOfType<Head_AniScript>();
-    
+
   }
 
   // Update is called once per frame
@@ -32,6 +32,11 @@ public class Ingame_BGM : MonoBehaviour
   {
 
   }
+
+	public void StopBGM()
+	{
+		AudioStatics.StopEvent(bgmEvent);
+	}
 
   public void UpdateBGM(int _bgmLevel)
   {
