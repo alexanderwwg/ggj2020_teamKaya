@@ -8,7 +8,9 @@ public class GameStateScript : MonoBehaviour
 {
 	public GameObject Listener;
 	public GameObject Speaker;
-	LevelDataScript LevelData;
+    public GameObject EndPanel;
+    public EndPanel_Script epScript;
+    LevelDataScript LevelData;
 	WaveControllerScript waveController;
 	public static Game State = Game.begin;
 	ProgressBar progressBar;
@@ -56,8 +58,11 @@ public class GameStateScript : MonoBehaviour
 		LevelData = GetComponent<LevelDataScript>();
 		waveController = GetComponent<WaveControllerScript>();
 		progressBar = FindObjectOfType<ProgressBar>();
+        epScript = EndPanel.GetComponent<EndPanel_Script>();
 
-		bgm = FindObjectOfType<Ingame_BGM>();
+        EndPanel.SetActive(false);
+
+    bgm = FindObjectOfType<Ingame_BGM>();
 
 		threshold = progressBar.checkPoint2;
 		timer = maxTimer;}
@@ -202,14 +207,18 @@ public class GameStateScript : MonoBehaviour
 				break;
 			case Game.win:
 				{
-					//Debug.Log("You Win");
+                    //Debug.Log("You Win");
+                    //EndPanel.SetActive(true);
+                    //epScript.EndWin();
 
 					break;
 				}
 			case Game.lose:
 				{
-					//Debug.Log("You Lose");
-					break;
+                    //Debug.Log("You Lose");
+                    //EndPanel.SetActive(true);
+                    //epScript.EndLose();
+                    break;
 				}
 		}
 	}
