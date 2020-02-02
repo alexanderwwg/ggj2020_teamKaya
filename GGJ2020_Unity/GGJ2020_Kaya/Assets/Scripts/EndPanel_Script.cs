@@ -10,7 +10,8 @@ public class EndPanel_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        WinText.SetActive(false);
+        LoseText.SetActive(false);
     }
 
     // Update is called once per frame

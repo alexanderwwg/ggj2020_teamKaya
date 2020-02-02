@@ -208,16 +208,16 @@ public class GameStateScript : MonoBehaviour
 			case Game.win:
 				{
                     //Debug.Log("You Win");
-                    //EndPanel.SetActive(true);
-                    //epScript.EndWin();
+                    EndPanel.SetActive(true);
+                    epScript.EndWin();
 
 					break;
 				}
 			case Game.lose:
 				{
                     //Debug.Log("You Lose");
-                    //EndPanel.SetActive(true);
-                    //epScript.EndLose();
+                    EndPanel.SetActive(true);
+                    epScript.EndLose();
                     break;
 				}
 		}

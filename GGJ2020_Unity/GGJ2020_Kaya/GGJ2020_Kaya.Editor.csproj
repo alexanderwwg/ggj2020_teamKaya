@@ -658,13 +658,13 @@
       <Project>{7F13D8B3-5888-0D6A-BAA8-5446157D8487}</Project>
       <Name>GGJ2020_Kaya</Name>
     </ProjectReference>
-    <ProjectReference Include="GGJ2020_Kaya.Plugins.csproj">
-      <Project>{B5248AB1-B669-1749-EAFD-1F82D656E953}</Project>
-      <Name>GGJ2020_Kaya.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="GGJ2020_Kaya.csproj">
       <Project>{7F13D8B3-5888-0D6A-BAA8-5446157D8487}</Project>
       <Name>GGJ2020_Kaya</Name>
+    </ProjectReference>
+    <ProjectReference Include="GGJ2020_Kaya.Plugins.csproj">
+      <Project>{B5248AB1-B669-1749-EAFD-1F82D656E953}</Project>
+      <Name>GGJ2020_Kaya.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="GGJ2020_Kaya.Editor.Plugins.csproj">
       <Project>{EB74C87F-910F-BE38-3170-794C0AD23412}</Project>
