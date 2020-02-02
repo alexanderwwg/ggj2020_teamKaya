@@ -72,7 +72,7 @@ public class Head_AniScript : MonoBehaviour
 		  
           if (isLeft && endPos < transform.position.x +1)
           {
-			AudioStatics.PlayOneShotAtLocation("event:/UI/ui_back", Vector3.zero);
+			AudioStatics.PlayOneShotAtLocation("event:/sfx_kiss_fail", Vector3.zero);
             transform.rotation = Quaternion.Euler(0, 0, -30);
 
             hS = HeadState.kissFinish;
