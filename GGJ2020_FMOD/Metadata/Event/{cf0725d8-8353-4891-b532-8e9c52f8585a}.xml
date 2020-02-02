@@ -5,7 +5,7 @@
 			<value>sfx_kiss_success</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{cf4b30a2-66d0-4f16-a5af-7e16b53ef913}</destination>
@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{77e173c0-a42f-48e9-a586-98d4fc6b49bf}" />
 	<object class="GroupTrack" id="{e18c6235-ae32-4b2a-9367-2d92d25a0402}">
 		<relationship name="modules">
-			<destination>{c404cd1b-2137-40d7-9051-fe57d386aef6}</destination>
+			<destination>{02a73ffe-33e9-4d5a-b9cc-c078a3a53da9}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{64d61065-c062-4b4e-9284-edb66c28ff3e}</destination>
@@ -68,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{725a482a-cbf9-42a1-a46c-ea1d3c5631da}">
 		<relationship name="modules">
-			<destination>{c404cd1b-2137-40d7-9051-fe57d386aef6}</destination>
+			<destination>{02a73ffe-33e9-4d5a-b9cc-c078a3a53da9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{40fa800c-cf8a-41be-8cd6-7afc0b810ec4}">
@@ -88,18 +88,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bee246b8-e88c-4fa2-bd1a-2f56fc1f1fc4}" />
-	<object class="SingleSound" id="{c404cd1b-2137-40d7-9051-fe57d386aef6}">
+	<object class="SingleSound" id="{02a73ffe-33e9-4d5a-b9cc-c078a3a53da9}">
 		<property name="length">
-			<value>3.5</value>
+			<value>3.0114375</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{d956ac0a-d1e1-4ac3-b78b-b04e794f49f8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{64d61065-c062-4b4e-9284-edb66c28ff3e}">
-		<property name="volume">
-			<value>7.5</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -123,9 +120,18 @@
 	<object class="MixerBusEffectChain" id="{50ecae03-fd15-4003-afcb-68ce968022f2}">
 		<relationship name="effects">
 			<destination>{c1742c9a-9445-4ea4-b787-90f3873dc9bd}</destination>
+			<destination>{80260337-99ec-45e0-8c76-898b1546dac6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{db883624-fb15-4fae-9272-f3e088bbf6d7}" />
 	<object class="MixerBusFader" id="{e5f0abac-aa04-4363-8ff4-3a21e6c9fe46}" />
 	<object class="MixerBusFader" id="{c1742c9a-9445-4ea4-b787-90f3873dc9bd}" />
+	<object class="CompressorEffect" id="{80260337-99ec-45e0-8c76-898b1546dac6}">
+		<property name="threshold">
+			<value>-14</value>
+		</property>
+		<property name="gain">
+			<value>10.5</value>
+		</property>
+	</object>
 </objects>

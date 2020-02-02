@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{d956ac0a-d1e1-4ac3-b78b-b04e794f49f8}">
+	<object class="AudioFile" id="{d38f661f-2538-4e64-8a17-6e7cdbd10133}">
 		<property name="assetPath">
-			<value>dc_sfx_kiss_success.wav</value>
+			<value>dc_sfx_kiss_fail.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

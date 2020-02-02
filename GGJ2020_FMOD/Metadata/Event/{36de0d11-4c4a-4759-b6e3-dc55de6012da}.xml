@@ -46,7 +46,7 @@
 	<object class="MasterTrack" id="{bee43203-7555-4502-aaa6-15d7f2a0576a}">
 		<relationship name="automationTracks">
 			<destination>{3075dd79-ab07-453a-90d1-56f90ead6339}</destination>
-			<destination>{26b28595-36c0-4eee-b9e8-eecceede8d22}</destination>
+			<destination>{69b1ebd2-6e3e-4b09-9d60-3a576fde440a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{649f9f50-e19e-41c9-979f-128dcba3d57c}</destination>
@@ -105,7 +105,7 @@
 			<destination>{d0f892e9-d490-495a-8eb3-a77c8a57c395}</destination>
 		</relationship>
 	</object>
-	<object class="AutomationTrack" id="{26b28595-36c0-4eee-b9e8-eecceede8d22}">
+	<object class="AutomationTrack" id="{69b1ebd2-6e3e-4b09-9d60-3a576fde440a}">
 		<relationship name="automator">
 			<destination>{38261e81-e94b-4d47-b189-6027063b50d6}</destination>
 		</relationship>
@@ -173,6 +173,7 @@
 			<destination>{9be2ff43-298c-4425-b566-46d4c005e9a2}</destination>
 			<destination>{f3234f56-cc7f-4908-8386-92f8f39ce6da}</destination>
 			<destination>{dbf8b326-6abd-440b-bd03-6863fcfc5afb}</destination>
+			<destination>{6d167520-bd35-43fa-a610-f1c318d4d285}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{318993ea-6820-40e0-ac5b-3ac427970e26}" />
@@ -242,6 +243,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{dbf8b326-6abd-440b-bd03-6863fcfc5afb}" />
+	<object class="CompressorEffect" id="{6d167520-bd35-43fa-a610-f1c318d4d285}">
+		<property name="threshold">
+			<value>-14</value>
+		</property>
+		<property name="gain">
+			<value>2.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{8ac4b7c6-6368-4306-ad46-d5ea3666ab6a}" />
 	<object class="AutomationPoint" id="{63c3d333-7dab-4037-9b3e-f81540d00341}">
 		<property name="position">
@@ -256,7 +265,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-7</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="Automator" id="{941b7ea7-852d-46cd-8af3-113b1f3c5e09}">
