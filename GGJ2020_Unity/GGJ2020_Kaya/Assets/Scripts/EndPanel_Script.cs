@@ -8,11 +8,11 @@ public class EndPanel_Script : MonoBehaviour
     public GameObject WinText;
     public GameObject LoseText;
     // Start is called before the first frame update
-    void Start()
-    {
-        WinText.SetActive(false);
-        LoseText.SetActive(false);
-    }
+    //void Start()
+    //{
+    //    WinText.SetActive(false);
+    //    LoseText.SetActive(false);
+    //}
 
     // Update is called once per frame
     void Update()
@@ -20,11 +20,11 @@ public class EndPanel_Script : MonoBehaviour
         
     }
 
-    void OnAwake()
-    {
-        WinText.SetActive(false);
-        LoseText.SetActive(false);
-    }
+    //void OnAwake()
+    //{
+    //    WinText.SetActive(false);
+    //    LoseText.SetActive(false);
+    //}
 
     public void EndWin()
     {
@@ -38,6 +38,7 @@ public class EndPanel_Script : MonoBehaviour
 
     public void ClickButton(string scene)
     {
-        SceneManager.LoadScene(scene);
+		FindObjectOfType<Ingame_BGM>().StopBGM();
+		SceneManager.LoadScene(scene);
     }
 }

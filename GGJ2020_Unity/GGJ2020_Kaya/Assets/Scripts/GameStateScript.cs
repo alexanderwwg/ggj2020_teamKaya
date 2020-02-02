@@ -26,7 +26,7 @@ public class GameStateScript : MonoBehaviour
 
 	public Image timerBar;
 
-	float maxTimer = 6;
+	float maxTimer = 9;
 	float timer = 0;
 
 	public List<GameObject> peopleHeads;
@@ -50,6 +50,10 @@ public class GameStateScript : MonoBehaviour
 		leftPerson.isLeft = true;
 		rightPerson.isLeft = false;
 
+		epScript = EndPanel.GetComponent<EndPanel_Script>();
+
+		EndPanel.SetActive(false);
+		print(EndPanel.activeInHierarchy);
 	}
 
 	// Start is called before the first frame update
@@ -58,11 +62,9 @@ public class GameStateScript : MonoBehaviour
 		LevelData = GetComponent<LevelDataScript>();
 		waveController = GetComponent<WaveControllerScript>();
 		progressBar = FindObjectOfType<ProgressBar>();
-        epScript = EndPanel.GetComponent<EndPanel_Script>();
 
-        EndPanel.SetActive(false);
 
-    bgm = FindObjectOfType<Ingame_BGM>();
+		bgm = FindObjectOfType<Ingame_BGM>();
 
 		threshold = progressBar.checkPoint2;
 		timer = maxTimer;}
@@ -74,7 +76,7 @@ public class GameStateScript : MonoBehaviour
 		{
 			case Game.begin:
 				{
-					Debug.Log(LevelData.Waves.Length);
+					//Debug.Log(LevelData.Waves.Length);
 					WaveType type = LevelData.Waves[gameCounter].type;
 					float amplitude = LevelData.Waves[gameCounter].amplitude;
 					float frequency = LevelData.Waves[gameCounter].frequency;
@@ -82,7 +84,7 @@ public class GameStateScript : MonoBehaviour
 
 					leftPerson.SetIsTalking(true);
 
-					Debug.Log("Begin State");
+					//Debug.Log("Begin State");
 					break;
 				}
 			case Game.game:
@@ -208,16 +210,14 @@ public class GameStateScript : MonoBehaviour
 			case Game.win:
 				{
                     //Debug.Log("You Win");
-                    EndPanel.SetActive(true);
-                    epScript.EndWin();
+
 
 					break;
 				}
 			case Game.lose:
 				{
                     //Debug.Log("You Lose");
-                    EndPanel.SetActive(true);
-                    epScript.EndLose();
+
                     break;
 				}
 		}
@@ -237,6 +237,7 @@ public class GameStateScript : MonoBehaviour
 
 			rightPerson.hS = Head_AniScript.HeadState.kissMove;
 			Debug.Log("You Win");
+			StartCoroutine(Endroutine());
 		}
 		else
 		{
@@ -247,6 +248,26 @@ public class GameStateScript : MonoBehaviour
 
 			rightPerson.hS = Head_AniScript.HeadState.headButt;
 			Debug.Log("You Lose");
+
+			StartCoroutine(Endroutine());
+
 		}
 	}
+
+	IEnumerator Endroutine()
+	{
+		yield return new WaitForSeconds(5.5f);
+		EndPanel.SetActive(true);
+		if (State == Game.win)
+		{
+			epScript.EndWin();
+		}
+		else
+		{
+			
+			epScript.EndLose();
+		}
+	}
+
+
 }

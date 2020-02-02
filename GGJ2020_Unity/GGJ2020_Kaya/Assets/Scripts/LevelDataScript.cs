@@ -18,11 +18,11 @@ public class LevelDataScript : MonoBehaviour
         Waves[4] = new Wave(2f,4f,WaveType.sine); 
         Waves[5] = new Wave(0.5f,1f,WaveType.sine); 
 
-        Waves[6] = new Wave(5f,1f,WaveType.sine); 
+        Waves[6] = new Wave(4f,1f,WaveType.sine); 
         Waves[7] = new Wave(0.5f,3f,WaveType.sine); 
         Waves[8] = new Wave(3f,2f,WaveType.sine); 
-        Debug.Log("The number of waves is");
-        Debug.Log(Waves);
+        //Debug.Log("The number of waves is");
+        //Debug.Log(Waves);
 
     }
 
