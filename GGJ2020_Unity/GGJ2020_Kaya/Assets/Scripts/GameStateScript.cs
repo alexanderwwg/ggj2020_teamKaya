@@ -75,7 +75,9 @@ public class GameStateScript : MonoBehaviour
 		bgm = FindObjectOfType<Ingame_BGM>();
 
 		threshold = progressBar.checkPoint2;
-		timer = maxTimer;}
+		
+		timerBar.fillAmount = 0;
+		}
 
 	// Update is called once per frame
 	void Update()
@@ -89,7 +91,7 @@ public class GameStateScript : MonoBehaviour
 					var endMarker = new Vector3(0,-4,0);
 					float fraction = (Time.time-interpolationStart)/1;
 					progressBar.transform.position = Vector3.Lerp(startMarker, endMarker, fraction);
-					timerBar.fillAmount = 0;
+					
 
 					//Debug.Log(LevelData.Waves.Length);
 					WaveType type = LevelData.Waves[gameCounter].type;
@@ -98,6 +100,7 @@ public class GameStateScript : MonoBehaviour
 					Speaker.GetComponent<LineController>().switchWave(type, amplitude, frequency);
 
 					leftPerson.SetIsTalking(true);
+					timer = maxTimer;
 
 					//Debug.Log("Begin State");
 					break;
@@ -133,7 +136,7 @@ public class GameStateScript : MonoBehaviour
 					gameCounter++;
 					won++;
 					Debug.Log("Matched State");
-					Debug.Log(LevelData.Waves.Length);
+					//Debug.Log(LevelData.Waves.Length);
 
 					bgm.UpdateBGM(gameCounter / 2);
 
